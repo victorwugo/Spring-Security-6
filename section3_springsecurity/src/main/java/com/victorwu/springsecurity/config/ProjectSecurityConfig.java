@@ -18,20 +18,6 @@ public class ProjectSecurityConfig {
                 .formLogin(withDefaults())
                 .httpBasic(withDefaults());
 
-        /**
-         * Configuration to deny all requests
-         */
-        /*http.authorizeHttpRequests((requests) -> requests.anyRequest().denyAll())
-                .formLogin(withDefaults())
-                .httpBasic(withDefaults());*/
-
-        /**
-         * Configuration to permit all requests
-         */
-        /*http.authorizeHttpRequests((requests) -> requests.anyRequest().permitAll())
-                .formLogin(withDefaults())
-                .httpBasic(withDefaults());*/
-
         return http.build();
     }
 
